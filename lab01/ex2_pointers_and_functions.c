@@ -5,9 +5,15 @@ void add_one(int input) {
 }
 
 // TODO: create a pointer to input
-void add_one_pointer(int *input) {
+void add_one_pointer(______ input) {
   // TODO: add one to the integer that input points to
-  *input += 1;
+  ________ += 1;
+}
+
+// TODO: create a pointer to a pointer to input
+void add_one_double_ptr(______ input) {
+  // TODO: add one to the integer that input doubly points to
+  ________ += 1;
 }
 
 int main() {
@@ -26,10 +32,19 @@ int main() {
   // TODO: use add_one_pointer to increment x
   // Hint: compare the type of x with the type of the argument
   //       for add_one_pointer
-  add_one_pointer(&x);
+  add_one_pointer(______);
 
   // This line should print 6
   printf("add_one_pointer: %d\n", x);
+  
+  // TODO: Let's save the pointer to x in y
+  ______ y = ______;
+
+  // TODO: use add_one_double_ptr to increment x again, using the pointer we just made
+  add_one_double_ptr(______);
+
+  // This line should print 7
+  printf("add_one_double_ptr: %d\n", x);
 
   return 0;
 }
